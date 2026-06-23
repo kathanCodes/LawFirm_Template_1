@@ -109,7 +109,7 @@ export default function Hero() {
       <video 
         className="hero__bg-video"
         autoPlay loop muted playsInline
-        src="https://assets.mixkit.co/videos/preview/mixkit-people-working-in-a-modern-office-5115-large.mp4"
+        src="/videos/hero-bg.mp4"
         style={{
           position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover',
           filter: 'grayscale(0.8) brightness(0.4) contrast(1.2)', zIndex: 2
@@ -129,7 +129,7 @@ export default function Hero() {
         <video 
           className="hero__lens-video"
           autoPlay loop muted playsInline
-          src="https://assets.mixkit.co/videos/preview/mixkit-people-working-in-a-modern-office-5115-large.mp4"
+          src="/videos/hero-bg.mp4"
           style={{
             position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover',
             transform: 'scale(1.15)', /* Magnifying effect */

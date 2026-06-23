@@ -16,14 +16,14 @@ function App() {
   useEffect(() => {
     let current = 0
     const interval = setInterval(() => {
-      current += Math.random() * 6 + 2
+      current += Math.random() * 12 + 4
       if (current >= 100) {
         current = 100
         clearInterval(interval)
-        setTimeout(() => setLoading(false), 800)
+        setTimeout(() => setLoading(false), 400)
       }
       setProgress(current)
-    }, 250)
+    }, 125)
     return () => clearInterval(interval)
   }, [])
 
