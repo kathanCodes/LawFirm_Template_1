@@ -66,6 +66,33 @@ export default function Hero() {
       {/* Overlay */}
       <div className="hero__overlay" />
 
+      {/* Lady Justice Image */}
+      <div 
+        className="hero__justice-img" 
+        style={{
+          position: 'absolute',
+          right: '0',
+          top: '50%',
+          transform: 'translateY(-50%)',
+          height: '100%',
+          width: '50%',
+          zIndex: 6,
+          pointerEvents: 'none',
+          opacity: 0.4,
+          mixBlendMode: 'screen',
+          display: 'flex',
+          justifyContent: 'flex-end',
+          alignItems: 'center',
+          overflow: 'hidden'
+        }}
+      >
+        <img 
+          src="/images/lady_justice.png" 
+          alt="Lady Justice" 
+          style={{ height: '100%', width: 'auto', objectFit: 'contain', transform: 'translateX(10%)' }}
+        />
+      </div>
+
       {/* Content */}
       <div className="hero__content">
         <h1 className="hero__headline">
