@@ -755,9 +755,9 @@ button {
   opacity: 1;
 }
 
-.team__card:hover .team__card-img--serious {
+/* .team__card:hover .team__card-img--serious {
   opacity: 0;
-}
+} */
 
 .team__card-info {
   position: absolute;

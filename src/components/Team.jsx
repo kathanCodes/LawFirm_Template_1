@@ -48,9 +48,7 @@ export default function Team() {
       <div className="team__grid">
         {attorneys.map((a, i) => (
           <div className="team__card reveal" key={i} style={{ transitionDelay: `${i * 0.15}s` }}>
-            {/* Smile layer (underneath) */}
-            <div className="team__card-img team__card-img--smile" style={{ backgroundImage: `url(${a.smile})` }} />
-            {/* Serious layer (on top, fades out on hover) */}
+            {/* Static image layer (no hover change) */}
             <div className="team__card-img team__card-img--serious" style={{ backgroundImage: `url(${a.serious})` }} />
             <div className="team__card-info">
               <div className="team__card-name">{a.name}</div>

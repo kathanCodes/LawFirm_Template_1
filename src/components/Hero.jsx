@@ -112,14 +112,14 @@ export default function Hero() {
         src="/videos/hero-bg.mp4"
         style={{
           position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover',
-          filter: 'grayscale(0.8) brightness(0.4) contrast(1.2)', zIndex: 2
+          filter: 'grayscale(0.6) brightness(0.6) contrast(1.1)', zIndex: 2
         }}
       />
 
       {/* Hero Overlay for strict WCAG contrast */}
       <div className="hero__overlay" style={{
         position: 'absolute', inset: 0, zIndex: 3, pointerEvents: 'none',
-        background: 'linear-gradient(180deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.65) 50%, rgba(0,0,0,0.9) 100%)'
+        background: 'linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.8) 100%)'
       }} />
 
       {/* Layer 3: Interactive Portal Lens Container */}
@@ -132,8 +132,8 @@ export default function Hero() {
           src="/videos/hero-bg.mp4"
           style={{
             position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover',
-            transform: 'scale(1.15)', /* Magnifying effect */
-            filter: 'grayscale(0.2) brightness(0.9) contrast(1.1)' /* Richer, vivid glimpse */
+            transform: 'scale(1.05)', /* Magnifying effect (subtle) */
+            filter: 'grayscale(0.4) brightness(0.8) contrast(1.1)' /* Richer, vivid glimpse */
           }}
         />
       </div>
@@ -141,9 +141,9 @@ export default function Hero() {
       {/* Lens Border */}
       <div className="hero__lens-border" ref={borderRef} style={{
         position: 'absolute', width: '300px', height: '300px', borderRadius: '50%',
-        border: '1px solid rgba(184, 115, 51, 0.4)', boxShadow: 'inset 0 0 40px rgba(184, 115, 51, 0.2), 0 0 60px rgba(0,0,0,0.8)',
+        border: '1px solid rgba(184, 115, 51, 0.2)', boxShadow: 'inset 0 0 20px rgba(184, 115, 51, 0.1), 0 0 40px rgba(0,0,0,0.4)',
         pointerEvents: 'none', zIndex: 5, transform: 'translate(-50%, -50%)',
-        backdropFilter: 'blur(2px)'
+        backdropFilter: 'blur(1px)'
       }} />
 
       {/* Content */}
